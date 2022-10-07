@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magination Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="background">
+    <div class="container">
+        <div class="search">
+            <label for="search" onclick="weather.FetchingWeather()"><i class="fa fa-search"></i></label>
+            <input type="search" name="search" id="search" class="input" placeholder="Search..">
+        </div>
+        <div class="main">
+            <div class="weather">
+
+                <h2 id="city">Weather in surat</h2>
+                <h1 id="Temp">51°C</h1>
+                <img src="https://openweathermap.org/img/wn/03d.png" id="icon" alt="">
+                <ul>
+                    <li id="description">Cloudy</li>
+                    <li id="Humadity">Humadity:60%</li>
+                    <li id="wind-speed">Wind speed:6.3 km/h</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
